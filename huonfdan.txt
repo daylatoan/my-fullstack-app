@@ -1,0 +1,21 @@
+my-fullstack-app/
+│
+├── backend/                        # Backend sử dụng Node.js + Express + MongoDB
+│   ├── src/                        # Mã nguồn chính
+│   │   ├── controllers/            # Chứa các hàm xử lý logic cho API
+│   │   ├── models/                 # Định nghĩa cấu trúc dữ liệu MongoDB bằng mongoose
+│   │   ├── routes/                 # Định nghĩa các route API (URL + phương thức)
+│   │   ├── config/                 # Cấu hình như database, dotenv,...
+│   │   └── index.ts                # Điểm khởi động server Express (main file)
+│   ├── package.json                # Quản lý thư viện, script, mô tả dự án backend
+│   └── tsconfig.json               # Cấu hình TypeScript cho backend
+│
+├── frontend/                       # Frontend sử dụng Next.js + React + Bootstrap + FontAwesome
+│   ├── pages/                      # Router (theo kiểu NextJS page-based routing)
+│   ├── components/                 # Các component React dùng lại nhiều lần
+│   ├── public/                     # Nơi lưu ảnh, favicon, static files
+│   ├── styles/                     # File CSS global hoặc module
+│   ├── package.json                # Quản lý thư viện, script, mô tả dự án frontend
+│   └── tsconfig.json               # Cấu hình TypeScript cho frontend
+│
+└── README.md                       # Tài liệu hướng dẫn chung cho toàn bộ dự án
